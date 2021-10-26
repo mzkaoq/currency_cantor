@@ -43,8 +43,15 @@ class Cantor:
             self.currency_input_to()
 
     def money_input(self):
-        print("enter your money")
-        self.__value = float(input())
+        print("enter your money input")
+        while True:
+            try:
+                self.__value = float(input())
+            except ValueError:
+                print("entered vaule is not a number")
+            else:
+                break
+
         if self.__value <= 0:
             print("try again")
             self.money_input()
