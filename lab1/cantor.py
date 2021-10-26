@@ -1,4 +1,4 @@
-from lab1.import_courses import ImportCourses
+from import_courses import ImportCourses
 from dict_currency import DictCurrency
 
 
